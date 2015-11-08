@@ -1,0 +1,50 @@
+              --------------------------------------------------------
+							Enterprise Services Readme File
+		                       	  June, 2014
+              --------------------------------------------------------
+                         (c) Copyright CompanyName, 2011-2014
+
+This document provides late-breaking or other information that supplements the Enterprise Services documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+NOTES
+   GENERAL
+   DEPENDENCIES
+   DEPLOYMENT
+   VERSION HISTORY
+==============
+
+
+NOTES
+==============
+GENERAL
+The Enterprise Service is a WCF web application that provides Enterprise 
+business services related to CompanyName business activities for SMTP, Bing Maps, etc.
+
+
+DEPENDENCIES
+SMTP services (smtp.companyname.com) for SMTP mail services.
+Bing Map services (http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3&mkt=en-us) for web maps.
+
+
+DEPLOYMENT
+When hosting an MSMQ-enabled service in IIS 7 WAS, the queue name must match the URI of your service's .svc file.
+
+
+VERSION HISTORY
+v4.0.0, 06/26/14 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design
+- none.
+
+
