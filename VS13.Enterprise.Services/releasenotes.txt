@@ -1,8 +1,8 @@
               --------------------------------------------------------
 							Enterprise Services Readme File
-		                       	  June, 2014
+		                       	  January, 2017
               --------------------------------------------------------
-                         (c) Copyright CompanyName, 2011-2014
+                         (c) Copyright CompanyName, 2015-2017
 
 This document provides late-breaking or other information that supplements the Enterprise Services documentation.
 
@@ -28,16 +28,18 @@ NOTES
 ==============
 GENERAL
 The Enterprise Service is a WCF web application that provides Enterprise 
-business services related to CompanyName business activities for SMTP, Bing Maps, etc.
+business services related to CompanyName business activities for centralized exception logging, SMTP, Bing Maps, etc.
 
 
 DEPENDENCIES
 SMTP services (smtp.companyname.com) for SMTP mail services.
 Bing Map services (http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3&mkt=en-us) for web maps.
+MSMQ: 
 
 
 DEPLOYMENT
-When hosting an MSMQ-enabled service in IIS 7 WAS, the queue name must match the URI of your service's .svc file.
+When hosting an MSMQ-enabled service in IIS 7 WAS, the queue name must match the URI of your service's .svc file. Also,
+add net.msmq to the IIS Enabled Protocols for the service application.
 
 
 VERSION HISTORY

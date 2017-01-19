@@ -19,7 +19,7 @@ using System.Web.Security;
 namespace VS13.Enterprise {
     //
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.NotAllowed)]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class ExceptionService:IExceptionService {
         //Members
 

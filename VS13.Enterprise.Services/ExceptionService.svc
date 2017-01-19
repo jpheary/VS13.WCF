@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="VS13.Enterprise.Services.Service1" CodeBehind="ExceptionService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="VS13.Enterprise.ExceptionService" CodeBehind="ExceptionService.svc.cs" %>

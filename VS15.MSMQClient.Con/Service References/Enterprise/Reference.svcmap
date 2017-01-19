@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2bf54c07-0938-4e6b-8b44-d3987e1025a5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ExceptionService.disco" MetadataType="Disco" ID="09bb4ce3-ecfc-45c8-b916-a892b40b8cc0" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?disco" />
+    <MetadataFile FileName="ExceptionService.xsd" MetadataType="Schema" ID="d77a1c59-6eeb-4c88-9db3-ad1b471ab056" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ExceptionService1.xsd" MetadataType="Schema" ID="362b66d6-b7b8-4b80-ae64-caf9d29c3e12" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ExceptionService2.xsd" MetadataType="Schema" ID="1c87a7dc-540c-4294-b571-6ed5645f572d" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ExceptionService.wsdl" MetadataType="Wsdl" ID="11030ab6-1d8b-4bcb-ba5e-7769c4e35202" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ExceptionService1.wsdl" MetadataType="Wsdl" ID="988b4cf0-35b0-4708-abdc-44de9d6e99d8" SourceId="1" SourceUrl="http://localhost/VS13/VS13.Enterprise.Services/ExceptionService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
