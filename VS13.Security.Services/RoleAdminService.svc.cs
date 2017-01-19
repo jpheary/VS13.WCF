@@ -11,7 +11,7 @@ using System.Text;
 namespace VS13.Security {
     //
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.NotAllowed)]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class RoleAdminService:IRoleAdminService {
         //Members
 
