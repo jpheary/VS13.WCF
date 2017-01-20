@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b58628c-7363-4ce1-a91f-fa8cb0d619da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Magazine2.xsd" MetadataType="Schema" ID="9f95fbae-5947-4305-9156-48a10ce3d155" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd2" />
+    <MetadataFile FileName="Magazine1.xsd" MetadataType="Schema" ID="8cb02bcd-2885-41e9-a043-a804e1ca833a" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd0" />
+    <MetadataFile FileName="Magazine.xsd" MetadataType="Schema" ID="1874d618-baef-4273-b44f-cb2154431bf2" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd1" />
+    <MetadataFile FileName="Magazine.disco" MetadataType="Disco" ID="1a566a1d-e58d-48d9-aca5-e771103fc5a6" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?disco" />
+    <MetadataFile FileName="MagazineService.wsdl" MetadataType="Wsdl" ID="4e199f83-ebaa-4e53-9490-a7eb96cf90e5" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?wsdl" />
+    <MetadataFile FileName="Magazine.wsdl" MetadataType="Wsdl" ID="8dd1f800-2008-41a5-a0bd-e530031e339e" SourceId="1" SourceUrl="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

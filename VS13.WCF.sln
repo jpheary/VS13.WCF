@@ -1,13 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.Protoype.Services", "VS13.Protoype.Services\VS13.Protoype.Services.csproj", "{22E68A9E-8294-4C2B-ACC3-910405892B0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.Enterprise.Services", "VS13.Enterprise.Services\VS13.Enterprise.Services.csproj", "{B981862E-12CA-4F5B-B968-025ED039AB26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.Security.Services", "VS13.Security.Services\VS13.Security.Services.csproj", "{AE96ADBA-493F-4113-9B73-87C97516D748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS15.MSMQClient.Con", "VS15.MSMQClient.Con\VS15.MSMQClient.Con.csproj", "{6114413D-82C3-4EDA-B959-0DCFA037A51B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B981862E-12CA-4F5B-B968-025ED039AB26} = {B981862E-12CA-4F5B-B968-025ED039AB26}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS15.Magazine.Services", "VS15.Magazine.Services\VS15.Magazine.Services.csproj", "{A9E3AB72-4FBD-41CC-B28A-0FE723CB818E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS15.MagazinePublisher.Con", "VS15.MagazinePublisher.Con\VS15.MagazinePublisher.Con.csproj", "{6AF3A285-D7FE-4D9C-94F1-9E0ADEF8B39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS15.MagazineSubscriber.Con", "VS15.MagazineSubscriber.Con\VS15.MagazineSubscriber.Con.csproj", "{F2614DAA-AE42-4DEC-9292-6D62566F4E82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +38,22 @@ Global
 		{AE96ADBA-493F-4113-9B73-87C97516D748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE96ADBA-493F-4113-9B73-87C97516D748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE96ADBA-493F-4113-9B73-87C97516D748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6114413D-82C3-4EDA-B959-0DCFA037A51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6114413D-82C3-4EDA-B959-0DCFA037A51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6114413D-82C3-4EDA-B959-0DCFA037A51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6114413D-82C3-4EDA-B959-0DCFA037A51B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E3AB72-4FBD-41CC-B28A-0FE723CB818E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E3AB72-4FBD-41CC-B28A-0FE723CB818E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E3AB72-4FBD-41CC-B28A-0FE723CB818E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E3AB72-4FBD-41CC-B28A-0FE723CB818E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF3A285-D7FE-4D9C-94F1-9E0ADEF8B39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF3A285-D7FE-4D9C-94F1-9E0ADEF8B39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF3A285-D7FE-4D9C-94F1-9E0ADEF8B39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF3A285-D7FE-4D9C-94F1-9E0ADEF8B39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2614DAA-AE42-4DEC-9292-6D62566F4E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2614DAA-AE42-4DEC-9292-6D62566F4E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2614DAA-AE42-4DEC-9292-6D62566F4E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2614DAA-AE42-4DEC-9292-6D62566F4E82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="VS15" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="VS15" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="VS15/Imports">
+      <xsd:import schemaLocation="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd0" namespace="VS15" />
+      <xsd:import schemaLocation="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VS15" />
+      <xsd:import schemaLocation="http://localhost/VS13/VS15.Magazine.Services/Magazine.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMagazineService_PublishMagazine_InputMessage">
+    <wsdl:part name="parameters" element="tns:PublishMagazine" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_PublishMagazine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PublishMagazineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_PublishMagazine_MagazineFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/VS15" name="detail" element="q1:MagazineFault" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_Subscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_Subscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_Unsubscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_Unsubscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_MessageReceived_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:MessageReceived" />
+  </wsdl:message>
+  <wsdl:message name="IMagazineService_MessageReceived_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:MessageReceivedResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IMagazineService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PublishMagazine">
+      <wsdl:input wsaw:Action="VS15/IMagazineService/PublishMagazine" message="tns:IMagazineService_PublishMagazine_InputMessage" />
+      <wsdl:output wsaw:Action="VS15/IMagazineService/PublishMagazineResponse" message="tns:IMagazineService_PublishMagazine_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://VS15.MagazineFault" name="MagazineFaultFault" message="tns:IMagazineService_PublishMagazine_MagazineFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Subscribe">
+      <wsdl:input wsaw:Action="VS15/IMagazineService/Subscribe" message="tns:IMagazineService_Subscribe_InputMessage" />
+      <wsdl:output wsaw:Action="VS15/IMagazineService/SubscribeResponse" message="tns:IMagazineService_Subscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="true" name="Unsubscribe">
+      <wsdl:input wsaw:Action="VS15/IMagazineService/Unsubscribe" message="tns:IMagazineService_Unsubscribe_InputMessage" />
+      <wsdl:output wsaw:Action="VS15/IMagazineService/UnsubscribeResponse" message="tns:IMagazineService_Unsubscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="MessageReceived">
+      <wsdl:output wsaw:Action="VS15/IMagazineService/MessageReceived" message="tns:IMagazineService_MessageReceived_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="VS15/IMagazineService/MessageReceivedResponse" message="tns:IMagazineService_MessageReceived_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

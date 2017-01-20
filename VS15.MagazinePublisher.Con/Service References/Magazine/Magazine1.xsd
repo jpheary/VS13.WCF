@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="VS15" elementFormDefault="qualified" targetNamespace="VS15" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PublishMagazine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hyperLinkToIssue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issueNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datePublished" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishMagazineResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Subscribe">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Unsubscribe">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageReceived">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hyperlinkToNewIssue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="issueNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="datePublished" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageReceivedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
